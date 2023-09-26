@@ -31,3 +31,30 @@ Content-Type: application/json
     "price": 12000,
     "image": "https://unsplash.com/pt-br/fotografias/um-caminho-de-terra-no-meio-de-um-deserto-rVdsDGh-TQ4"
 }
+
+###
+
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "Victor",
+    "description": "Uma festa de aniversário",
+    "budget": 9000,
+    "image": "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "services": [
+        {
+           "name": "Algum serviço de teste ",
+            "description": "ALO ALO teste",
+            "price": 2000,
+            "image": "https://unsplash.com/pt-br/fotografias/um-caminho-de-terra-no-meio-de-um-deserto-rVdsDGh-TQ4" 
+        },
+        {
+           "name": "Algum serviço de teste 2",
+            "description": "ALO ALO teste 2",
+            "price": 4000,
+            "image": "https://unsplash.com/pt-br/fotografias/um-caminho-de-terra-no-meio-de-um-deserto-rVdsDGh-TQ4" 
+        }
+    ]
+}
