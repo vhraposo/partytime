@@ -5,45 +5,43 @@ API RESTful para Eventos e Festas
 
 🚀 Tecnologias:
 
-Node.js
-Express
-MongoDB
-Mongoose
+Node.js <br>
+Express <br>
+MongoDB <br>
+Mongoose <br>
+<br>
 📃 Documentação:
 
 Endpoints:
-/api/services: Cria, lista, recupera, atualiza e exclui serviços.
-/api/parties: Cria, lista, recupera, atualiza e exclui festas.
-Requisições:
-POST: Cria um novo registro.
-GET: Recupera um registro.
-PUT: Atualiza um registro.
-DELETE: Exclui um registro.
-Respostas:
-200 OK: Sucesso.
-400 Bad Request: Erro de requisição.
-401 Unauthorized: Usuário não autenticado.
-403 Forbidden: Usuário não autorizado.
-404 Not Found: Registro não encontrado.
-🔐 Segurança:
+/api/services: Cria, lista, recupera, atualiza e exclui serviços. <br>
+/api/parties: Cria, lista, recupera, atualiza e exclui festas. <br>
+Requisições:  <br>
+POST: Cria um novo registro. <br>
+GET: Recupera um registro. <br>
+PUT: Atualiza um registro. <br>
+DELETE: Exclui um registro. <br>
+Respostas: <br>
+200 OK: Sucesso. <br>
+400 Bad Request: Erro de requisição. <br>
+401 Unauthorized: Usuário não autenticado. <br>
+403 Forbidden: Usuário não autorizado. <br>
+404 Not Found: Registro não encontrado. <br>
 
-Autenticação: Usuários são autenticados com o token JWT.
-Autorização: Usuários são autorizados com base no seu papel.
-🔨 Instalação:
+🔨 Instalação: 
 
-Clone o repositório:
-git clone https://github.com/[seu-usuário]/api-eventos-festas.git
-Instale as dependências:
-npm install
-Crie um arquivo .env com as seguintes variáveis de ambiente:
-MONGODB_URI=mongodb://localhost:27017/api-eventos-festas
-Inicie o servidor:
-npm run dev
-🎉 Pronto! A API estará rodando na porta 3000.
+Clone o repositório: <br>
+git clone https://github.com/[seu-usuário]/api-eventos-festas.git <br>
+Instale as dependências: <br>
+npm install <br>
+Crie um arquivo .env com as seguintes variáveis de ambiente: <br>
+MONGODB_URI=mongodb://localhost:27017/api-eventos-festas <br>
+Inicie o servidor: <br>
+npm start <br>
+🎉 Pronto! A API estará rodando na porta 3000. <br>
 
-Exemplos de requisições:
+Exemplos de requisições: <br>
 
-# Criar um serviço
+# Criar um serviço <br>
 curl -X POST \
   -H "Content-Type: application/json" \
   -d '{
@@ -53,8 +51,8 @@ curl -X POST \
     "image": "https://example.com/imagem.jpg"
   }' \
   http://localhost:3000/api/services
-
-# Listar todos os serviços
+<br>
+# Listar todos os serviços  <br>
 curl http://localhost:3000/api/services
 
 # Recuperar um serviço
@@ -70,8 +68,8 @@ curl -X PUT \
     "image": "https://example.com/nova-imagem.jpg"
   }' \
   http://localhost:3000/api/services/1234567890
-
-# Excluir um serviço
+<br>
+# Excluir um serviço <br>
 curl -X DELETE \
   http://localhost:3000/api/services/1234567890
 
@@ -92,13 +90,13 @@ curl -X POST \
     ]
   }' \
   http://localhost:3000/api/parties
-
-# Listar todas as festas
+<br>
+# Listar todas as festas <br>
 curl http://localhost:3000/api/parties
-
+<br>
 # Recuperar uma festa
 curl http://localhost:3000/api/parties/1234567890
-
+<br>
 # Atualizar uma festa
 curl -X PUT \
   -H "Content-Type: application/json" \
