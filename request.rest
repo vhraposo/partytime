@@ -2,8 +2,12 @@ POST http://localhost:3000/api/services
 Content-Type: application/json
 
 {
-    "name": "Algum serviço",
-    "description": "ALO ALO",
-    "price": 1000,
-    "image": "https://images.unsplash.com/photo-1683009427037-c5afc2b8134d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    "name": "Algum serviço 2",
+    "description": "ALO ALO 2",
+    "price": 2000,
+    "image": "https://unsplash.com/pt-br/fotografias/um-caminho-de-terra-no-meio-de-um-deserto-rVdsDGh-TQ4"
 }
+
+###
+
+GET http://localhost:3000/api/services
