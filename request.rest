@@ -68,3 +68,28 @@ GET http://localhost:3000/api/parties/6512f5502a8f10ced41abc79
 ###
 DELETE http://localhost:3000/api/parties/6512f5502a8f10ced41abc79
 
+###
+PUT http://localhost:3000/api/parties/6512f5e72a8f10ced41abc7b
+Content-Type: application/json
+
+{
+    "title": "Meu evento atualizado 2",
+    "author": "Victor Raposo",
+    "description": "Uma festa de aniversário atualizada",
+    "budget": 9000,
+    "image": "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "services": [
+        {
+           "name": "Algum serviço de teste 5",
+            "description": "ALO ALO teste",
+            "price": 2000,
+            "image": "https://unsplash.com/pt-br/fotografias/um-caminho-de-terra-no-meio-de-um-deserto-rVdsDGh-TQ4" 
+        },
+        {
+           "name": "Algum serviço de teste 6",
+            "description": "ALO ALO teste 6",
+            "price": 4000,
+            "image": "https://unsplash.com/pt-br/fotografias/um-caminho-de-terra-no-meio-de-um-deserto-rVdsDGh-TQ4" 
+        }
+    ]
+}
