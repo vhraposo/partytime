@@ -14,4 +14,8 @@ GET http://localhost:3000/api/services
 
 ###
 
-GET http://localhost:3000/api/services/6512e49f89d977761c53e809
+GET http://localhost:3000/api/services/6512e61dfc6318cb991956d1
+
+###
+
+DELETE  http://localhost:3000/api/services/6512e61dfc6318cb991956d1
